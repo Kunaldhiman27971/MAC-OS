@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+        "title": "Productivity Dashboard",
+        "description": "A productivity tracking dashboard to manage daily goals, tasks, and performance metrics with a clean UI.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "repoLink": "https://github.com/Kunaldhiman27971/Productivity-Dashboard",
+        "demoLink": "https://www.google.com/"
+    },
+    {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980",
+        "title": "Movie Recommendation System",
+        "description": "A machine learning based movie recommendation system that suggests movies based on user preferences.",
+        "tags": [
+            "Python",
+            "Machine Learning",
+            "Pandas",
+            "Scikit-learn"
+        ],
+        "repoLink": "https://github.com/Kunaldhiman27971/Movie-Recommendation-System",
+        "demoLink": "https://www.google.com/"
+    },
+    {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1551434678-e076c223a692",
+        "title": "WhatsApp Chat Analyzer",
+        "description": "A WhatsApp chat analysis tool that visualizes messages, activity trends, and user statistics.",
+        "tags": [
+            "Python",
+            "Data Analysis",
+            "Visualization"
+        ],
+        "repoLink": "https://github.com/Kunaldhiman27971/Whatsapp-Chat-Analyzer",
+        "demoLink": "https://www.google.com/"
+    },
+    {
+        "id": 4,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+        "title": "Portfolio Website",
+        "description": "A MacOS-inspired UI based portfolio built using modern frontend technologies.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React"
+        ],
+        "repoLink": "https://github.com/Kunaldhiman27971/MAC-OS",
+        "demoLink": ""
+    }
+]

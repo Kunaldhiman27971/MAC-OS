@@ -3,7 +3,14 @@ import { Rnd } from 'react-rnd';
 import './MacWindow.scss';
 const MacWindow = ({children}) => {
     return (
-        <Rnd>
+        <Rnd 
+        default={{
+            height:"60vh",
+            width:"40vw",
+            x:200,
+            y:100
+        }}
+        >
             <div className="window">
                 <div className="nav">
                     <div className="dots">
