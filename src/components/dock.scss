@@ -16,36 +16,59 @@
         display: flex;
         justify-self: center;
         align-items: center;
+        flex-direction: column;
         border-radius: .5rem;
         aspect-ratio: 1/1;
         width: 3rem;
         justify-content: center;
         transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-     
+
     }
+
+
     
 
     .github,.cli{
         background-color: black;
+        h1{
+            color: transparent;
+            bottom: 10%;
+        }
     }
     .note{
         background: linear-gradient(to bottom,rgb(253, 181, 94),rgb(255,153,28));
+         h1{
+            color: transparent;
+        }
     }
     .pdf{
         background: linear-gradient(to bottom,rgb(255, 95, 87),rgb(255, 59, 48));
+         h1{
+            color: transparent;
+        }
     }
     .calender,.mail{
         background: linear-gradient(to bottom,rgb(100, 210, 255),rgb(0, 122, 255));
+         h1{
+            color: transparent;
+        }
     }
     .spotify{
         background: linear-gradient(to bottom,rgb(130, 224, 170),rgb(52, 199, 89));
+         h1{
+            color: transparent;
+        }
     }
     .link{
         background: linear-gradient(to bottom,rgb(191, 191, 191),rgb(142, 142, 147));
+         h1{
+            color: transparent;
+        }
     }
 
     .icon:hover{
         transform: scale(1.25) translateY(-20%) ;
+        cursor: pointer;
     }
 
     // Combinators hover effect

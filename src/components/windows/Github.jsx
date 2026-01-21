@@ -10,7 +10,7 @@ const GitCard = ({
     title: "",
     description: "",
     tags: [],
-    repolink: "",
+    repoLink: "",
     demoLink: ""
   }
 }) => {
@@ -28,12 +28,12 @@ const GitCard = ({
 
       <div className="urls">
         <div className="repository">
-            <a href={data.repolink}>Repository</a>
+            <a href={data.repoLink}>Repository</a>
             <img className='github' src="./public/doc-icons/github.svg" alt="" />
         </div>
         
         <div className="demo">
-            {data.demoLink && <a href={data.demolink}>Live Demo</a>}
+            {data.demoLink && <a href={data.demoLink}>Live Demo</a>}
             {data.demoLink && <img className='link' src="./public/doc-icons/link.svg" alt="" />}
         </div>
       </div>
