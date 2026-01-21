@@ -29,12 +29,11 @@ const GitCard = ({
       <div className="urls">
         <div className="repository">
             <a href={data.repoLink} target='_blank'>Repository</a>
-            <img className='github' src="./public/doc-icons/github.svg" alt="" />
+          
         </div>
         
         <div className="demo">
             {data.demoLink && <a href={data.demoLink} target='_blank'>Live Demo</a>}
-            {data.demoLink && <img className='link' src="./public/doc-icons/link.svg" alt="" />}
         </div>
       </div>
     </div>
