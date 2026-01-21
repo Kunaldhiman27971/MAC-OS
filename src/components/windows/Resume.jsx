@@ -2,9 +2,9 @@ import React from 'react';
 import './resume.scss';
 import MacWindow from './MacWindow';
 
-const Resume=() =>{
+const Resume=({windowName,setWindowState}) =>{
   return (
-   <MacWindow>
+   <MacWindow windowName={windowName} setWindowState={setWindowState}>
     <div className="resume-window">
         <embed src="/resume.pdf" frameborder="0"></embed>
     </div>

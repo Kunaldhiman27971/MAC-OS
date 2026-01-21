@@ -125,13 +125,13 @@ FOCUS:
   },
 };
 
-const Cli = () => {
+const Cli = ({windowName,setWindowState}) => {
   const commandsList = Object.entries(commands)
     .map(([cmd, details]) => `  ${cmd.padEnd(12)} - ${details.description}`)
     .join('\n');
 
   return (
-    <MacWindow>
+    <MacWindow  windowName={windowName} setWindowState={setWindowState}>
       <div className="cli-window">
         <Terminal
           commands={commands}
