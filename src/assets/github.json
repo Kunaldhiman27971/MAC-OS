@@ -1,6 +1,23 @@
 [
+   
     {
         "id": 1,
+        "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+        "title": "AI Resume Builder",
+        "description": "An AI-powered resume builder that generates professional resumes based on user input and preferences.",
+        "tags": [
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "React",
+            "AI",
+            "OpenAI"
+        ],
+        "repoLink": "https://github.com/Kunaldhiman27971/GENAIRESUME.git",
+        "demoLink": "https://airesume-ssbu.onrender.com/"
+    },
+     {
+        "id": 2,
         "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
         "title": "Productivity Dashboard",
         "description": "A productivity tracking dashboard to manage daily goals, tasks, and performance metrics with a clean UI.",
@@ -12,8 +29,22 @@
         "repoLink": "https://github.com/Kunaldhiman27971/Productivity-Dashboard",
         "demoLink": "https://productivity-dashboard-3vnhwdp3p-kunaldhiman27971s-projects.vercel.app/"
     },
+       {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+        "title": "Portfolio Website",
+        "description": "A MacOS-inspired UI based portfolio built using modern frontend technologies.",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React"
+        ],
+        "repoLink": "https://github.com/Kunaldhiman27971/MAC-OS",
+        "demoLink": "https://mac-os-portfolio-teal.vercel.app/"
+    },
     {
-        "id": 2,
+        "id": 4,
         "image": "https://images.unsplash.com/photo-1525182008055-f88b95ff7980",
         "title": "Movie Recommendation System",
         "description": "A machine learning based movie recommendation system that suggests movies based on user preferences.",
@@ -27,7 +58,7 @@
         "demoLink": "https://www.google.com/"
     },
     {
-        "id": 3,
+        "id": 5,
         "image": "https://images.unsplash.com/photo-1551434678-e076c223a692",
         "title": "WhatsApp Chat Analyzer",
         "description": "A WhatsApp chat analysis tool that visualizes messages, activity trends, and user statistics.",
@@ -38,19 +69,5 @@
         ],
         "repoLink": "https://github.com/Kunaldhiman27971/Whatsapp-Chat-Analyzer",
         "demoLink": "https://www.google.com/"
-    },
-    {
-        "id": 4,
-        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
-        "title": "Portfolio Website",
-        "description": "A MacOS-inspired UI based portfolio built using modern frontend technologies.",
-        "tags": [
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React"
-        ],
-        "repoLink": "https://github.com/Kunaldhiman27971/MAC-OS",
-        "demoLink": "https://mac-os-portfolio-teal.vercel.app/"
     }
 ]

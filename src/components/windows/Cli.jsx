@@ -8,12 +8,14 @@ const commands = {
     description: 'Know more about me',
     usage: 'about',
     fn: () => `
-👋 Hi, I'm a passionate Full-Stack Web Developer.
+👋 Hi, I'm Kunal Dhiman.
 
-I specialize in building modern, interactive, and performance-driven web
-applications using the MERN stack and modern frontend technologies.
-I enjoy solving problems, experimenting with animations, and building
-products that feel smooth and intuitive.
+I'm a Computer Science student at NIT Hamirpur with experience in 
+full-stack web development and data-driven solutions.
+
+I enjoy building real-world applications involving AI, dashboards,
+and modern web technologies. I focus on creating clean, responsive,
+and user-friendly interfaces backed by efficient backend systems.
     `
   },
 
@@ -23,26 +25,33 @@ products that feel smooth and intuitive.
     fn: () => `
 💻 TECH STACK
 
+Languages:
+  • C / C++
+  • Python
+  • JavaScript
+
 Frontend:
-  • HTML5, CSS3, SCSS
-  • JavaScript (ES6+)
   • React.js
-  • Three.js
-  • GSAP
+  • HTML5, CSS3
 
 Backend:
   • Node.js
   • Express.js
-  • MongoDB (MERN Stack)
 
-Programming & Data:
-  • Python
-  • C++
-  • Data Analysis (Python)
+Databases:
+  • MongoDB
+  • MySQL
+  • PostgreSQL
 
-Tools & Others:
+AI / ML:
+  • TensorFlow
+  • Keras
+  • PyTorch
+
+Tools:
   • Git & GitHub
-  • Vite
+  • Docker
+  • CI/CD
   • REST APIs
     `
   },
@@ -53,27 +62,58 @@ Tools & Others:
     fn: () => `
 🚀 PROJECTS
 
-1️⃣ macOS Portfolio
-   • macOS-inspired UI
-   • React + Vite
-   • Interactive animations
+1️⃣ ResumeAI
+   • AI-based resume analysis & job matching system
+   • Resume scoring + ATS analysis
+   • Identifies 10+ missing skills per job
+   • Generates preparation roadmap
+   • Tech: React, Node.js, MongoDB, AI APIs
 
 2️⃣ Productivity Dashboard
-   • Task & goal tracking
-   • Clean UI with charts
-   • JavaScript & React
+   • Task, planner, pomodoro & goals in one platform
+   • Integrated weather & time APIs
+   • Responsive UI with theme switching
+   • Reduces need for multiple apps
 
-3️⃣ GitHub Projects Showcase
-   • Dynamic repo cards
-   • JSON-based data rendering
-   • Responsive layout
+3️⃣ Data Analysis Work
+   • Cleaned 5+ datasets
+   • Identified trends & patterns
+   • Built dashboards for insights
+    `
+  },
 
-4️⃣ Data Analysis Projects
-   • Python-based analysis
-   • Real-world datasets
-   • Visual insights
+  experience: {
+    description: 'View my experience',
+    usage: 'experience',
+    fn: () => `
+💼 EXPERIENCE
 
-More projects coming soon 👨‍💻
+📊 Data Analyst Intern — VproTech Digital (May 2025 – July 2025)
+
+  • Cleaned & preprocessed 5+ datasets
+  • Performed EDA to identify 10+ trends
+  • Built 3+ dashboards & reports
+  • Suggested 5+ process improvements
+    `
+  },
+
+  leadership: {
+    description: 'Positions of responsibility',
+    usage: 'leadership',
+    fn: () => `
+👥 LEADERSHIP
+
+• State Co-Convenor — Think India
+  Represented Himachal Pradesh at IIT Roorkee
+
+• Core Coordinator — Dramatics Club
+  Led 10+ activities & 5+ performances
+
+• Core Coordinator — Finance Team
+  Managed sponsorships & logistics
+
+• Organizing Member — ICAMS Conference
+• Organizing Member — IASP Workshop
     `
   },
 
@@ -83,31 +123,33 @@ More projects coming soon 👨‍💻
     fn: () => `
 📬 CONTACT
 
-📧 Email: yourname@email.com
-🐙 GitHub: github.com/yourusername
-💼 LinkedIn: linkedin.com/in/yourusername
-🌐 Portfolio: yourportfolio.dev
+📧 Email: kunaldhiman27971@gmail.com
+🐙 GitHub: github.com/Kunaldhiman27971
+💼 LinkedIn: linkedin.com/in/kunaldhiman
+🌐 Portfolio: (your deployed link here)
+📱 Phone: +91-7018035594
     `
   },
 
   resume: {
-    description: 'View my resume',
+    description: 'View my resume summary',
     usage: 'resume',
     fn: () => `
-📄 RESUME
+📄 RESUME SUMMARY
 
-ROLE:
-  • Full-Stack Web Developer
+🎓 NIT Hamirpur
+Integrated B.Tech + M.Tech (CSE)
+CGPI: 7.9 / 8.5
 
-SKILLS:
-  • MERN Stack
-  • Frontend Animations (GSAP, Three.js)
-  • Data Analysis (Python)
+💡 Focus Areas:
+  • Full-Stack Web Development
+  • AI-based Applications
+  • Data Analysis & Dashboards
 
-FOCUS:
-  • Clean UI
-  • Performance
-  • Real-world problem solving
+🚀 Strengths:
+  • Problem Solving
+  • Clean UI + Functional Backend
+  • Real-world project building
     `
   },
 
@@ -117,26 +159,24 @@ FOCUS:
     fn: () => `
 🌍 SOCIALS
 
-🐙 GitHub    → github.com/yourusername
-💼 LinkedIn  → linkedin.com/in/yourusername
-🐦 Twitter   → twitter.com/yourusername
-📸 Instagram → instagram.com/yourusername
+🐙 GitHub    → github.com/Kunaldhiman27971
+💼 LinkedIn  → linkedin.com/in/kunaldhiman
     `
   },
 };
 
-const Cli = ({windowName,setWindowState}) => {
+const Cli = ({ windowName, setWindowState }) => {
   const commandsList = Object.entries(commands)
     .map(([cmd, details]) => `  ${cmd.padEnd(12)} - ${details.description}`)
     .join('\n');
 
   return (
-    <MacWindow  windowName={windowName} setWindowState={setWindowState}>
+    <MacWindow windowName={windowName} setWindowState={setWindowState}>
       <div className="cli-window">
         <Terminal
           commands={commands}
           welcomeMessage={`
-🖥️  Welcome to My Portfolio Terminal
+🖥️  Welcome to Kunal's Portfolio Terminal
 
 Type a command and press Enter.
 
@@ -146,7 +186,7 @@ ${commandsList}
 ────────────────────────────────────
 Type 'help' to see usage details.
           `}
-          promptLabel="visitor:~$"
+          promptLabel="kunal@portfolio:~$"
           promptLabelStyle={{ color: '#00ff00' }}
         />
       </div>

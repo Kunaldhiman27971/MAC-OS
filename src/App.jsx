@@ -5,7 +5,6 @@ import Nav from './components/Nav'
 import GitHub from './components/windows/Github'
 import Note from './components/windows/Note'
 import Resume from './components/windows/Resume'
-import Spotify from './components/windows/Spotify'
 import Cli from './components/windows/Cli'
 
 
@@ -14,7 +13,6 @@ const [windowState, setWindowState]=useState({
   github: false,
   note: false,
   resume: false,
-  spotify: false,
   cli: false,
 })
 
@@ -27,8 +25,6 @@ const [windowState, setWindowState]=useState({
       {windowState.note && <Note windowName='note' setWindowState={setWindowState} />}
 
      {windowState.resume && <Resume windowName='resume' setWindowState={setWindowState}/>}
-
-      {windowState.spotify &&<Spotify windowName='spotify' setWindowState={setWindowState} />}
 
       {windowState.cli && <Cli windowName='cli'  setWindowState={setWindowState}/>}
     </main>
