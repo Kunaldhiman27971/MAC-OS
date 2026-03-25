@@ -159,7 +159,7 @@ CGPI: 7.9 / 8.5
     fn: () => `
 🌍 SOCIALS
 
-🐙 GitHub    → github.com/Kunaldhiman27971
+🐙 GitHub    → kunaldhiman27971.github.com
 💼 LinkedIn  → linkedin.com/in/kunaldhiman
     `
   },
